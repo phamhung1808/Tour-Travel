@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/png" href="./images/logo.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tour.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <title>Tour Travel</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.1.0/countUp.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navigation container">
+            <div class="nav nav__logo">
+                Tour <span>.</span>
+            </div>
+            <div class="nav nav__list">
+                <ul class="nav__menu">
+                    <li class="nav__click">
+                        <a href="#">home</a>
+                    </li>
+                    <li class="subnav nav__click">
+                        <a href="">dropdown</a>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <ul class="nav--one nav__click--child">
+                            <li><a href="#">elements</a></li>
+                            <li><a href="#">Menu one</a></li>
+                            <li class="nav--one__child">
+                                <a href="#">Menu two
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+
+                                <ul class="nav--two">
+                                    <li><a href="#">submenu one</a></li>
+                                    <li><a href="#">submenu two</a></li>
+                                    <li><a href="#">submenu three</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Menu three</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__click">
+                        <a href="#">services</a>
+                    </li>
+                    <li class="nav__click">
+                        <a href="#">about</a>
+                    </li>
+                    <li class="nav__click">
+                        <a href="#">contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="text-run">
+            <h1>Let's Enjoy Your</h1>
+            <h1>Trip In <span class="text-runspeed"></span></h1>
+        </div>
+
+        <div class="header--content">
+            <div class="search--form">
+                <div class="search--info">
+                    <select class="text-form" name="" id="">
+                        <option value="">Destination</option>
+                        <option value="">Peru</option>
+                        <option value="">Japan</option>
+                        <option value="">Korean</option>
+                        <option value="">Thailand</option>
+                        <option value="">Brazil</option>
+                        <option value="">England</option>
+                        <option value="">China</option>
+                        <option value="">Cuba</option>
+                        <option value="">Vietnam</option>
+                    </select>
+                    <input class="text-form" type="date">
+                    <input class="text-form" type="text" placeholder="# of People">
+                </div>
+                <div class="search--btn">
+                    <span><a href="">search</a></span>
+                    <label for="">
+                        <input type="checkbox">
+                        <span>Save this search</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="img-header">
+            <img src="./images/sanfrancisco.jpg" alt="San Francisco" class="img-fluid active" data-id="1">
+            <img src="./images/paris.jpg" alt="Paris" class="img-fluid active" data-id="2">
+            <img src="./images/newzealand.jpg" alt="New Zealand" class="img-fluid active" data-id="3">
+            <img src="./images/maui.jpg" alt="Maui" class="img-fluid active" data-id="4">
+            <img src="./images/london.jpg" alt="London" class="img-fluid active" data-id="5">
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Main content -->
+    <section class="main-content">
+        <div class="container">
+            <h1 class="content__title">Our Services</h1>
+            <div class="content__line"></div>
+            <div class="content__subtitle">Far far away, behind the word mountains, far from the countries Vokalia and
+                <br> Consonantia, there live the blind texts. Separated they live in Bookmarksgrove <br> right at the
+                coast of the Semantics, a large language ocean.
+            </div>
+
+            <div class="row support">
+                <div class="box col">
+                    <img src="./images/sanfrancisco.jpg" alt="">
+                </div>
+                <div class="col">
+                    <div class="box--child">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <h3>Beautiful Condo</h3>
+                        <p>Even the all-powerful Pointing has no <br> control about the blind texts.</p>
+                    </div>
+                    <div class="box--child">
+                        <ion-icon name="restaurant-outline"></ion-icon>
+                        <h3>Restaurants & Cafe</h3>
+                        <p>Even the all-powerful Pointing has no <br> control about the blind texts.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="box--child">
+                        <ion-icon name="mail-open-outline"></ion-icon>
+                        <h3>Easy to Connect</h3>
+                        <p>Even the all-powerful Pointing has no <br> control about the blind texts.</p>
+                    </div>
+                    <div class="box--child">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <h3>24/7 Support</h3>
+                        <p>Even the all-powerful Pointing has no <br> control about the blind texts.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="counter">
+                <div class="autonumber">
+                    <div class="box-number">
+                        <div class="number">9,313</div>
+                        <div class="text">No. of Travels</div>
+                    </div>
+                    <div class="box-number">
+                        <div class="number">8,492</div>
+                        <div class="text">No. of Clients</div>
+                    </div>
+                    <div class="box-number">
+                        <div class="number">100</div>
+                        <div class="text">No. of Employees</div>
+                    </div>
+                    <div class="box-number">
+                        <div class="number">120</div>
+                        <div class="text">No. of Countries</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-content">
+        <div class="container">
+            <h1 class="content__title">Popular Destination</h1>
+            <div class="content__line"></div>
+            <div class="slides-show">
+                <div class="content-slide">
+                    <img src="./images/sanfrancisco.jpg" alt="San Francisco">
+                    <p class="name-img">San Francisco</p>
+                </div>
+                <div class="content-slide">
+                    <img src="./images/paris.jpg" alt="Paris">
+                    <p class="name-img">Paris</p>
+                </div>
+                <div class="content-slide">
+                    <img src="./images/newzealand.jpg" alt="New Zealand">
+                    <p class="name-img">New Zealand</p>
+                </div>
+                <div class="content-slide">
+                    <img src="./images/maui.jpg" alt="Maui">
+                    <p class="name-img">Maui</p>
+                </div>
+                <div class="content-slide">
+                    <img src="./images/london.jpg" alt="London">
+                    <p class="name-img">London</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background: #f8f9fa; padding-bottom:110px;" class="main-content">
+        <div class="container">
+            <h1 class="content__title">Testimonials</h1>
+            <div class="content__line"></div>
+            <div class="avatar-show">
+                <div class="content-avatar">
+                    <figure>
+                        <img src="./images/phamanhhung.png">
+                    </figure>
+                    <h3>Mr.Hưng</h3>
+                    <p>ĐH Kinh tế kỹ thuật - công nghiệp <br> ĐHMT12A1HN <br> Việt Trì - Phú Thọ</p>
+                </div>
+                <div class="content-avatar">
+                    <figure>
+                        <img src="./images/vector-ho-vang-nham-dan-2022-4024.webp">
+                    </figure>
+                    <h3>Tiger</h3>
+                    <p>Nhâm Dần - 2022</p>
+                </div>
+                <div class="content-avatar">
+                    <figure>
+                        <img src="./images/Girl.jpg">
+                    </figure>
+                    <h3>Girl</h3>
+                    <p>F88 nhà cái uy tín hàng đầu Việt Nam</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-content">
+        <div class="container">
+            <h1 class="content__title">Special Offers & Discounts</h1>
+            <div class="content__line"></div>
+            <div class="content__subtitle">Far far away, behind the word mountains, far from the countries Vokalia and
+                <br> Consonantia, there live the blind texts. Separated they live in Bookmarksgrove <br> right at the
+                coast of the Semantics, a large language ocean.
+            </div>
+
+            <div class="row support">
+                <div class="col">
+                    <img src="./images/sanfrancisco.jpg" alt="">
+                    <div class="info">
+                        <div class="place-name">
+                            <ion-icon class="locate" name="location-outline"></ion-icon><span>Italy</span>
+                        </div>
+                        <h2>Rialto Mountains</h2>
+                        <h3>$520.00</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./images/paris.jpg" alt="">
+                    <div class="info">
+                        <div class="place-name">
+                            <ion-icon class="locate" name="location-outline"></ion-icon><span>United States</span>
+                        </div>
+                        <h2>San Francisco</h2>
+                        <h3>$520.00</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./images/maui.jpg" alt="">
+                    <div class="info">
+                        <div class="place-name">
+                            <ion-icon class="locate" name="location-outline"></ion-icon><span>Malaysia</span>
+                        </div>
+                        <h2>Perhentian Islands</h2>
+                        <h3>$750.00</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./images/london.jpg" alt="">
+                    <div class="info">
+                        <div class="place-name">
+                            <ion-icon class="locate" name="location-outline"></ion-icon><span>Switzerlad</span>
+                        </div>
+                        <h2>Lake Thun</h2>
+                        <h3>$520.00</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="notification main-content">
+        <div class="container">
+            <div class="notification-text">
+                <h1>Lets you Explore the Best. Contact Us Now</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, fugit?</h2>
+                <a href="#">Get it touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Main -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-about">
+                <div class="col-4 footer-child">
+                    <h3>about tour</h3>
+                    <p>Far far away, behind the word mountains, far from <br> the countries Vokalia and Consonantia,
+                        there live the <br> blind texts.</p>
+                    <div class="icon-link">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        <ion-icon name="logo-dribbble"></ion-icon>
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                        <ion-icon name="logo-css3"></ion-icon>
+                        <ion-icon name="logo-html5"></ion-icon>
+                    </div>
+                </div>
+                <div class="col-4 footer-child">
+                    <div class="Pages">
+                        <h3>Pages</h3>
+                        <ul>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="Resources">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4 footer-child">
+                    <div class="contact">
+                        <div class="h4">contact</div>
+                        <div class="">
+                            <i class="fa-solid fa-envelope"></i> <span>phamanhhung2k@gmail.com</span>
+                        </div>
+                        <div class="">
+                            <i class="fa-solid fa-phone"></i> <span>+84 34 727 4169</span>
+                        </div>
+                        <div class="">
+                        <i class="fa-solid fa-location-dot"></i> <span>Việt Trì - Phú Thọ - Việt Nam</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright ©2022. All Rights Reserved. — Designed with love by Mr.Hung</div>
+        </div>
+    </footer>
+
+    <!-- end footer -->
+
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./tour.js"></script>
+    <script src="./slides.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
+</html>
